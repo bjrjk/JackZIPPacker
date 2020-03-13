@@ -37,11 +37,15 @@ struct BinaryTreeNode {
 //键值对定义
 template<typename KeyType, typename ValueType>
 struct KeyValuePair {
-	KeyType key;
-	ValueType value;
+	KeyType key; //键
+	ValueType value; //值
+	//默认构造函数
 	KeyValuePair() {}
+	//构造函数重载
 	KeyValuePair(KeyType Key) :key(Key) {}
+	//构造函数重载
 	KeyValuePair(KeyType Key, ValueType Value) :key(Key), value(Value) {}
+	//运算符<重载
 	bool operator < (const KeyValuePair& v2) const {
 		return key < v2.key;
 	}

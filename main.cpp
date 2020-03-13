@@ -16,9 +16,10 @@ void UnZIP(const char* ZIPFilePath, const char* filePath) {
 	exit(0);
 }
 void help() {
-	cout << "---Jack ZIP Packer/UnPacker Help---" << endl;
-	cout << "jzpk z [source filePath] [jzpk filePath]" << endl;
-	cout << "jzpk u [jzpk filePath] [source filePath]" << endl;
+	cout << "---Jack ZIP Packer/UnPacker v0.2 Help---" << endl;
+	cout << "---Designed and Programmed by Jack Ren, https://renjikai.com/ ---" << endl;
+	cout << "jzpk z [source filePath] [jzpk filePath] # Zip file" << endl;
+	cout << "jzpk u [jzpk filePath] [source filePath] # UnZip file" << endl;
 	exit(0);
 }
 int main(int argc, char* argv[]) {
